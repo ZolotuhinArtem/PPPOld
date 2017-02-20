@@ -1,0 +1,23 @@
+.popup-content-padding {
+	padding: 18px 24px;
+}
+
+
+#track_title {
+	text-align: center;
+	width: 100%;
+}
+#track_artist {
+	text-align: center;
+	width: 100%;
+}
+#track_album {
+	text-align: center;
+	width: 100%;
+}
+#audio{
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}

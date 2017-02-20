@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	<title>Tizen Web IDE - Template - Tizen - Tizen Web UI Framework - Multi Page</title>
+</head>
+
+<body>
+	<div id="mainPage" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <h1>P P P</h1>
+           	<div class="ui-btn-box-s">
+           		<span>Sort by:</span>
+           		<button class="ui-btn-inline" id="btn_sort_by_title">title</button>
+           		<button class="ui-btn-inline" id="btn_sort_by_artist">artist</button>
+           		<button class="ui-btn-inline" id="btn_sort_by_album">album</button>
+           	</div>
+        </div><!-- /header -->
+        <div data-role="content" id="content_main">
+            <ul class="ui-listview" data-role="listview" id="track_list">
+            	<li class="ui-li-static">Scanning tracks...</li>
+            </ul>
+        </div><!-- /content -->
+        
+	    <div data-role="footer" class="ui-footer">
+	    	<a href="#trackPage" data-role="button" class="ui-btn">Show track</a>	
+	    </div><!-- /footer -->
+    </div><!-- /page -->
+    
+    <div id="trackPage" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <h1>P P P</h1>
+        </div><!-- /header -->
+		<div data-role="content" id="content_track">
+			<ul class="ui-listview" data-role="listview" id="track_attributes_list_view">
+				<li  class="ui-li-static"><img alt="track" src="/res/img/track_template.png" width="100%" /></li>
+				<li  class="ui-li-static" id="track_title">...</li>
+				<li  class="ui-li-static" id="track_album"></li>
+				<li  class="ui-li-static" id="track_artist"></li>
+			</ul>
+        </div><!-- /content -->
+        <div data-role="footer" class="ui-footer">
+        	<audio src="" id="audio" controls autoplay ></audio>
+        </div>
+    </div><!-- /page -->
+	<script type="text/javascript" src="./lib/jquery.js"></script>
+	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
